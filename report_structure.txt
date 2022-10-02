@@ -1,0 +1,25 @@
+Report 
+
+ 
+
+1. Introduction 
+
+1.1 The Problem (Choose a dataset: not too easy, not too hard). General idea, area of knowledge, usefulness of the analysis on the application domain. Attributes, classes.
+
+1.2. Exploratory Data Analysis: Data statistics. Outliers. Missing data. Particularities of the dataset. Approaches to deal with these. 
+
+1.3. Attribute selection and/or extraction: Correlation analysis: linear, monotonic. Will some method be considered to try different sets of initial attributes for model training? 
+
+
+
+2. Method / Methodology / Results 
+
+2.1. How the method will be evaluated? Separation Train/Validation/Test data? 5-fold cross validation? Different structures of neural nets (number of neurons per layer, number of layers) for evaluation. Initial hyper-parameters of the learning algorithm to be tested (Grid search?). Can missing data and outliers (in different percentages) be forced to evaluate model robustness? 
+
+2.2. Comparative Results. Tables, figures, some discussions and insight.
+
+
+
+3. Conclusion
+
+References in general. References that used the dataset.
