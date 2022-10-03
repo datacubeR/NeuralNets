@@ -68,13 +68,13 @@ class MLP(pl.LightningModule):
 
         self.net = nn.Sequential(
             #nn.Linear(44, 128),
-            nn.LazyLinear(64),
-            nn.ReLU(),
-            # nn.Tanh(),
-            nn.Linear(64, 32),
-            nn.ReLU(),
-            # nn.Tanh(),
-            nn.Linear(32, 7)
+            nn.LazyLinear(128),
+            #nn.ReLU(),
+            nn.Tanh(),
+            nn.Linear(128, 64),
+            #nn.ReLU(),
+            nn.Tanh(),
+            nn.Linear(64, 7)
         )
 
         self.criterion = nn.CrossEntropyLoss()
@@ -98,4 +98,4 @@ class MLP(pl.LightningModule):
         return loss#{"loss": loss, "predictions": y_hat, "labels": batch["labels"]}
 
     def configure_optimizers(self):
-        return torch.optim.SGD(self.parameters(), lr=0.001)
+        return torch.optim.Adam(self.parameters(), lr=0.001)

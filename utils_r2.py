@@ -213,13 +213,8 @@ class MLP(pl.LightningModule):
         super().__init__()
 
         self.net = nn.Sequential(
-            #nn.Linear(44, 128),
             nn.LazyLinear(hidden_size),
-            nn.ReLU(),
-            #nn.Tanh(),
-            # nn.Linear(64, 32),
-            # nn.ReLU(),
-            # nn.Tanh(),
+            nn.Tanh(),
             nn.Linear(hidden_size, 1)
         )
 
