@@ -7,3 +7,7 @@ TODO
 ## Tarea 2 RBF vs MLP en Taxi Rides
 
 TODO
+
+## Tarea SOM en Tarjeta de Créditos
+
+TODO
