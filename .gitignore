@@ -4,3 +4,7 @@ reporte_2
 reporte_3
 checkpoints
 lightning_logs
+training
+validation
+*.zip
+CATS_DOGS
